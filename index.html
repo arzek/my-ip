@@ -10,7 +10,7 @@
 </code>
 
 <script>
-    fetch('http://ip-api.com/json').then(async (response) => {
+    fetch('https://ipfind.co/me?auth=50e887ce-e3bb-4f00-a9b9-667597db5539').then(async (response) => {
         const text = await response.json()
         document.getElementById('id').innerText = JSON.stringify(text, null, 2);
     });
