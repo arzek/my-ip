@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<code id="id">
+
+</code>
+
+<script>
+    fetch('http://ip-api.com/json').then(async (response) => {
+        const text = await response.json()
+        document.getElementById('id').innerText = JSON.stringify(text, null, 2);
+    });
+</script>
+</body>
+</html>
